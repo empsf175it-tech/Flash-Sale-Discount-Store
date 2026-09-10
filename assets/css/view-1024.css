@@ -1,0 +1,198 @@
+/* ==========================================================================
+   VOLTDROP — 1024 DESKTOP VIEW STYLESHEET
+   Screen Width: 1024px and above (min-width: 1024px)
+   This stylesheet ONLY targets 1024 Desktop View.
+   Changes made here will NOT affect Mobile or Tablet views.
+   ========================================================================== */
+
+/* --- 1024 Desktop Header & Navigation --- */
+.mobile-toggle {
+  display: none !important;
+}
+
+/* Display header bar cart button on 1024 Desktop */
+.nav-actions .cart-btn {
+  display: flex !important;
+}
+
+/* Hide hamburger drawer cart wrapper on 1024 Desktop */
+.nav-cart-wrapper {
+  display: none !important;
+}
+
+.nav-links {
+  display: flex !important;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  position: static;
+  background: transparent;
+  padding: 0;
+  border-bottom: none;
+  box-shadow: none;
+  flex-direction: row;
+}
+
+.nav-links .nav-link {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  width: auto;
+  padding: 0.3rem 0;
+  border-radius: 0;
+}
+
+.nav-links .nav-link.active {
+  background: transparent;
+  border-left: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding-left: 0;
+  box-shadow: none;
+  text-shadow: 0 0 12px rgba(255, 26, 83, 0.4);
+}
+
+/* --- 1024 Desktop Hero Section --- */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 4rem;
+  text-align: left;
+}
+
+.hero-content {
+  align-items: flex-start;
+}
+
+.hero-title {
+  font-size: 3.75rem;
+  line-height: 1.1;
+}
+
+.hero-trust-strip {
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.hero-cta-group {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1.25rem;
+}
+
+.hero-cta-group .btn {
+  width: auto;
+}
+
+/* --- 1024 Desktop Grids & Cards --- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 1.8rem 1.15rem;
+}
+
+.category-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  min-height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0.35rem;
+  line-height: 1.2;
+}
+
+.category-count {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.category-action-link {
+  margin-top: auto;
+}
+
+.shop-promo-card {
+  grid-column: span 2;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  padding: 2.5rem 3rem;
+}
+
+/* --- 1024 Desktop Banners & Forms --- */
+.newsletter-form {
+  flex-direction: row;
+  width: 100%;
+}
+
+.scarcity-banner-box {
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5rem 4rem;
+}
+
+.contact-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+}
+
+/* --- 1024 Desktop Footer --- */
+.footer-grid {
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.footer-bottom {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* --- 1024 Desktop Modals & Timers --- */
+.modal-grid {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.countdown-unit {
+  min-width: 85px;
+  padding: 0.85rem 1.1rem;
+}
+
+.countdown-num {
+  font-size: 2.35rem;
+}
+
+.toast-container {
+  right: 2rem;
+  bottom: 2rem;
+  max-width: 400px;
+}
+
+.scroll-top-btn {
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
