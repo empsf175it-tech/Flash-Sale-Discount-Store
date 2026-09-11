@@ -118,7 +118,8 @@
 
 /* --- Tablet Grids & Cards --- */
 .card-grid, 
-.category-grid {
+.category-grid,
+.highlights-grid {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }

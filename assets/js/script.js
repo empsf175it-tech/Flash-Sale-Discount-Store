@@ -1135,4 +1135,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Global Fulfillment Hub Map Switcher
+  window.switchMapHub = function(lat, lng, label) {
+    const iframe = document.querySelector('.cyber-map-iframe');
+    const badge = document.querySelector('.map-overlay-badge small');
+    if (iframe) {
+      iframe.src = `https://maps.google.com/maps?q=${lat},${lng}&z=11&output=embed`;
+    }
+    if (badge) {
+      badge.textContent = `${label} • Dispatch Center`;
+    }
+    document.querySelectorAll('.hub-pill').forEach(btn => {
+      if (btn.textContent.includes(label.split(' ')[0])) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+  };
+
 });

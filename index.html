@@ -127,7 +127,7 @@
       <!-- Smooth In-Page Nav Links -->
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
-          <li><a href="#flash-sale" class="nav-link">Flash Sale</a></li>
+          <li><a href="#hero" class="nav-link">Home</a></li>
           <li><a href="#categories" class="nav-link">Categories</a></li>
           <li><a href="#best-deals" class="nav-link">Best Deals</a></li>
           <li><a href="#shop" class="nav-link">Shop All</a></li>
@@ -245,6 +245,57 @@
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 1.5: QUICK HIGHLIGHTS & PLATFORM GUARANTEES (Related Under H1)
+         ======================================================================== -->
+    <section id="highlights" class="highlights-section">
+      <div class="container">
+        <div class="highlights-grid">
+          
+          <div class="highlight-card">
+            <div class="highlight-icon-wrapper">
+              <span class="highlight-icon">⚡</span>
+            </div>
+            <div class="highlight-body">
+              <h3>Fastest Lightning Drops</h3>
+              <p>Direct priority allocations released in real-time with zero queue wait times.</p>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon-wrapper">
+              <span class="highlight-icon">🔥</span>
+            </div>
+            <div class="highlight-body">
+              <h3>Deepest Flash Discounts</h3>
+              <p>Up to 78% MSRP markdown locked exclusively for 24-hour drop windows.</p>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon-wrapper">
+              <span class="highlight-icon">🛡️</span>
+            </div>
+            <div class="highlight-body">
+              <h3>100% Hardware Guarantee</h3>
+              <p>Fully certified original luxury tech with complete global manufacturer coverage.</p>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon-wrapper">
+              <span class="highlight-icon">🚀</span>
+            </div>
+            <div class="highlight-body">
+              <h3>Express Cyber Dispatch</h3>
+              <p>Automated fulfillment dispatching your orders within 24 hours globally.</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -594,6 +645,36 @@
               </button>
             </div>
 
+            <!-- Global Fulfillment Hub Map Card -->
+            <div class="support-map-card">
+              <div class="map-card-header">
+                <div class="map-title-wrap">
+                  <span class="pulse-dot-cyan"></span>
+                  <h4 class="map-title">Global Fulfillment Hub</h4>
+                </div>
+                <span class="map-status-pill">⚡ 12ms HQ Latency</span>
+              </div>
+              
+              <div class="map-viewport">
+                <iframe 
+                  title="VOLTDROP Global Headquarters Map"
+                  src="https://maps.google.com/maps?q=37.7749,-122.4194&z=11&output=embed" 
+                  class="cyber-map-iframe"
+                  loading="lazy">
+                </iframe>
+                <div class="map-overlay-badge">
+                  <span>📍 VOLTDROP Labs HQ</span>
+                  <small>San Francisco, CA • Dispatch Center 01</small>
+                </div>
+              </div>
+
+              <div class="map-hubs-strip">
+                <button type="button" class="hub-pill active" onclick="switchMapHub(37.7749, -122.4194, 'San Francisco HQ 🇺🇸')">🇺🇸 SF HQ</button>
+                <button type="button" class="hub-pill" onclick="switchMapHub(35.6762, 139.6503, 'Tokyo Node 🇯🇵')">🇯🇵 Tokyo</button>
+                <button type="button" class="hub-pill" onclick="switchMapHub(50.1109, 8.6821, 'Frankfurt Hub 🇩🇪')">🇩🇪 Frankfurt</button>
+              </div>
+            </div>
+
           </div>
 
           <!-- Contact Form Right Column -->
@@ -619,11 +700,11 @@
 
               <div class="form-group">
                 <label for="contact-subject" class="form-label">Inquiry Topic</label>
-                <select id="contact-subject" class="form-input">
-                  <option>Order Allocation & Tracking</option>
-                  <option>Hardware Specifications & Warranty</option>
-                  <option>VIP Drop Access Membership</option>
-                  <option>Corporate & Bulk Inquiries</option>
+                <select id="contact-subject" class="form-input custom-select">
+                  <option value="tracking">Order Allocation & Tracking</option>
+                  <option value="warranty">Hardware Specifications & Warranty</option>
+                  <option value="membership">VIP Drop Access Membership</option>
+                  <option value="corporate">Corporate & Bulk Inquiries</option>
                 </select>
               </div>
 

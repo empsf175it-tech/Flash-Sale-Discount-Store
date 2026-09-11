@@ -139,7 +139,8 @@
 
 /* --- Mobile Grids & Product Cards --- */
 .card-grid, 
-.category-grid {
+.category-grid,
+.highlights-grid {
   grid-template-columns: 1fr;
   gap: 1.25rem;
 }

@@ -98,6 +98,44 @@
   gap: 1.5rem;
 }
 
+.highlights-section {
+  margin-top: -1rem;
+  margin-bottom: 3.5rem;
+}
+
+.highlights-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1.35rem !important;
+}
+
+.highlight-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 1.75rem 1.25rem !important;
+  gap: 1rem !important;
+  height: 100% !important;
+}
+
+.highlight-icon-wrapper {
+  margin: 0 auto !important;
+}
+
+.highlight-body {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.highlight-body h3 {
+  text-align: center !important;
+}
+
+.highlight-body p {
+  text-align: center !important;
+}
+
 .category-card {
   display: flex;
   flex-direction: column;
